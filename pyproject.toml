@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "luosg_diffusion2d"
+version = "0.0.1"
+authors = [
+	{name="Luo, Shiting", email="schitingluo@gmail.com"}
+]
+description = "2D diffusion equation simulation"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+keywords = ["sse", "2D diffusion"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+[project.urls]
+Homepage = "https://github.com/Simulation-Software-Engineering/diffusion2D"
+
+
+[project.entry-points."simulation"]
+solve = "luosg_diffusion2d:solve"
